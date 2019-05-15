@@ -8,6 +8,7 @@ import Mode
 ICPCON="192.168.2.250"
 PORT=502
 myZwave="/dev/ttyACM0"
+
 class MyModbus:
 	def __init__(self,mode):
 		if mode=="tcp":
@@ -17,7 +18,7 @@ class MyModbus:
 			print("---"+self.etat+" configuration---");
 		else :
 			self.etat=mode;
-			self.client=serial.Serial					   (port=myZwave,baudrate=9600,parity=serial.PARITY_ODD);
+			self.client=serial.Serial(port=myZwave,baudrate=9600,parity=serial.PARITY_ODD);
 			self.db=db.Mydb()
 			print("---"+self.etat+" configuration---");
 			if self.client.isOpen():
