@@ -5,7 +5,7 @@ import serial
 import os
 import db
 import Mode
-ICPCON="192.168.2.250"
+ICPCON=""
 PORT=502
 myZwave="/dev/ttyACM0"
 
