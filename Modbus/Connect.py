@@ -2,7 +2,6 @@ from interface import implements, Interface
 from pyModbusTCP.client import ModbusClient
 import serial 
 
-ICPCON="192.168.2.250"
 PORT=502
 myZwave="/dev/ttyACM0"
 
